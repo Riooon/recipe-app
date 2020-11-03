@@ -1,0 +1,92 @@
+<div class="page" data-name="about">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons ios-only">menu</i>
+            <i class="icon material-icons md-only">menu</i>
+          </a>
+        </div>
+      <div class="title">マイページ</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list">
+      <ul>
+        <li>
+          <a href="#" class="item-link item-content" onclick="ChangeUserInfo();">
+            <div class="item-media"><img id="user_icon_1" src="" alt=""></div>
+            <div class="item-inner">
+              <div class="item-title">
+                <div class="item-header">ユーザー名</div>
+                <span id="user_name">user_name</span>
+              </div>
+              <div class="item-after">Edit</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-link item-content" onclick="ChangeUserInfo();">
+            <div class="item-media"><img id="user_icon_2" src="" alt=""></div>
+            <div class="item-inner">
+              <div class="item-title">
+                <div class="item-header">メールアドレス</div>
+                <span id="user_email">user_email</span>
+              </div>
+              <div class="item-after">Edit</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="block-title">現在のレベル</div>
+    <div class="block block-strong text-align-center">
+      <!-- we will init this gauge in JavaScript -->
+      <div class="gauge demo-gauge"></div>
+    </div>
+    <p id="user_id" class="userid_disabled">user_id</p>
+  </div>
+  <!-- 固定のメニューバー -->
+  <ul class="menu_fixed">
+    <a href="/overview/"><li><i class="fas fa-pencil-alt"></i><span>コース一覧</span></li></a>
+    <a href="/"><li><i class="fas fa-search"></i><span>レシピを探す</span></li></a>
+    <a href="/stock/"><li><i class="fas fa-book-open"></i><span>今週の献立</span></li></a>
+  </ul>
+  <!-- ログイン画面 -->
+  <div class="login-screen" id="my-login-screen">
+  <div class="view">
+    <div class="page">
+      <div class="page-content login-screen-content">
+        <div class="login-screen-title">Login</div>
+        <div class="list">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Email</div>
+                <div class="item-input-wrap">
+                  <input type="email" name="email" placeholder="メールアドレス">
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Password</div>
+                <div class="item-input-wrap">
+                  <input type="password" name="password" placeholder="Your password">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="#" class="item-link list-button login-button">Sign In</a>
+            </li>
+          </ul>
+          <div class="block-footer">パスワードを忘れた場合は、<a href="#" onclick="ChangePassword();">こちら</a>からパスワードの再設定を行うことができます。<br><br><a class="link login-screen-close">戻る</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

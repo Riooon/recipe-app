@@ -1,0 +1,229 @@
+/* Your app styles here */
+.page-content {
+  padding: 0 0 63px;
+}
+.panel-left .block p {
+  font-size: 21px;
+}
+.panel-left .block img {
+  width: 12rem;
+}
+
+/* hoverイベント（消したり追加したり） */
+.display_none {
+  display: none;
+}
+
+/* index.html */
+.home_inner {
+    z-index: -1;
+}
+.home_inner .text_block {
+    text-align: center;
+    width: 75%;
+    margin: 20px auto 0;
+    color: white;
+}
+.home_inner video {
+    width: 100%;
+    height: 99.2vh;
+    opacity: 0.8;
+    object-fit: cover;
+    position: relative;
+
+}
+.home_inner .text_block {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 800px;
+}
+.home_inner .text_block a {
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0 0;
+  background-color: orange;
+  border-radius: 5px;
+}
+.menu_fixed {
+  max-width: 720px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  background: orange;
+  color: white!important;
+  margin-bottom: 0;
+  padding: 7px 0 5px;
+  font-size: 0.8rem;
+  border-top: 1px solid #80808033;
+  z-index: 10;
+}
+.menu_fixed li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 3px 0;
+}
+.menu_fixed li i {
+    margin: 0 0 .5rem;
+}
+.menu_fixed span {
+    font-size: 0.6rem;
+}
+
+/* overview.html */
+.demo-card-header-pic .card-header {
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+  color: #8e8e93;
+}
+
+.course-bg {
+  background-color: rgba(0,0,0,0.2);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+}
+::-webkit-progress-value {
+    background-color: orange;
+    border-radius: 8px;
+  }
+::-webkit-progress-bar {
+  background-color: #80808033;
+  border-radius: 8px;
+  height: 12px;
+  width: 200px;
+}
+::-moz-progress-value {
+    background-color: orange;
+    border-radius: 8px;
+}
+::-moz-progress-bar {
+    background-color: #80808033;
+    border-radius: 8px;
+    height: 12px;
+    width: 200px;
+}
+
+/* course.html */
+.course-title {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-title h1 {
+  color: white;
+}
+.course_hover {
+  position: relative;
+}
+.course_hovered {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.completed_text {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* find.html */
+.media-list .item-media img {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+/* detail.html */
+.demo-swiper .swiper-slide {
+  padding: 0 30px;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  background-color:rgba(0,0,0,0.3);
+  background-blend-mode:darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 100vh;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+.ingredient_item {
+  flex: 1;
+}
+.add_recipe {
+  width: 50%;
+  margin: 0 auto 30px;
+}
+
+
+/* login.html */
+.login_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_title img {
+  width: 80px;
+}
+
+/* userpage.html */
+.item-media img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.userid_disabled {
+  display: none;
+}
+
+/* stock.html */
+.delete_stock_btn {
+  width: 120px;
+  margin: 15px 0 0;
+}

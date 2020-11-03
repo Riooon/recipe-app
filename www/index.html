@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head>
+<body class="color-theme-green">
+  <div id="app">
+    <!-- Left panel -->
+    <div class="panel panel-left panel-reveal panel-resizable panel-init">
+      <div class="block">
+        <p><img src="https://okomemode.com/img/logo_big.png" alt=""></p>
+        <p><a href="/" class="panel-close">レシピを探す</a></p>
+        <p><a href="/overview/" class="panel-close">コース一覧</a></p>
+        <p><a href="/stock/" class="panel-close">今週の献立</a></p>
+        <p><a href="/userpage/" class="panel-close">マイページ</a></p>
+      </div>
+    </div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main ios-edges">
+      <!-- Page, data-name contains page name which can be used in callbacks -->
+      <div class="page" data-name="find"  onLoad="loadHello()">
+        <div class="navbar">
+          <div class="navbar-inner sliding">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+            <div class="title">レシピ一覧</div>
+          </div>
+        </div>
+        
+        <div class="page-content hide-toolbar-on-scroll hide-navbar-on-scroll">
+          <div class="searchbar-backdrop"></div>
+          <form class="searchbar">
+            <div class="searchbar-inner">
+              <div class="searchbar-input-wrap">
+                <input type="search" placeholder="Search">
+                <i class="searchbar-icon"></i>
+                <span class="input-clear-button"></span>
+              </div>
+              <span class="searchbar-disable-button">Cancel</span>
+            </div>
+          </form>
+          <div class="list media-list">
+            <ul id="recipe_list">
+            </ul>
+          </div>
+          <ul class="menu_fixed">
+            <a href="/overview/"><li><i class="fas fa-pencil-alt"></i><span>コース一覧</span></li></a>
+            <a href="#"><li><i class="fas fa-search"></i><span>レシピを探す</span></li></a>
+            <a href="/stock/"><li><i class="fas fa-book-open"></i><span>今週の献立</span></li></a>
+          </ul>
+        </div>
+      </div>
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+  <!-- Monaca JS library -->
+  <script src="components/loader.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

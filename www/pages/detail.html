@@ -1,0 +1,71 @@
+<div class="page" data-name="find"  onLoad="loadHello()">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title" id="how_to_make">レシピ詳細</div>
+    </div>
+  </div>
+
+  <div class="page-content" style="padding: 0">
+    <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" class="swiper-container demo-swiper">
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="slide0"></div>
+        <div class="swiper-slide" id="slide1"></div>
+        <div class="swiper-slide" id="slide2"></div>
+        <div class="swiper-slide" id="slide3"></div>
+        <div class="swiper-slide" id="slide4"></div>
+      </div>
+    </div>
+    <div class="list">
+      <ul id="ingredient_list">
+        <li class="item-divider">材料一覧</li>
+      </ul>
+    </div>
+    <div class="add_recipe">
+      <button class="col button button-fill color-orange" id="add_stock">献立に追加</button>
+    </div>
+  </div>
+  <!-- ログイン画面 -->
+  <div class="login-screen" id="my-login-screen">
+  <div class="view">
+    <div class="page">
+      <div class="page-content login-screen-content">
+        <div class="login-screen-title">Login</div>
+        <div class="list">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Email</div>
+                <div class="item-input-wrap">
+                  <input type="email" name="email" placeholder="メールアドレス">
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Password</div>
+                <div class="item-input-wrap">
+                  <input type="password" name="password" placeholder="Your password">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="#" class="item-link list-button login-button">Sign In</a>
+            </li>
+          </ul>
+          <div class="block-footer">パスワードを忘れた場合は、<a href="#" onclick="ChangePassword();">こちら</a>からパスワードの再設定を行うことができます。<br><br><a class="link login-screen-close">戻る</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

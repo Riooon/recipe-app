@@ -139,7 +139,7 @@ routes = [
         });
 
         $("#destroy_stock").on("click", function(){
-          $.post( "https://okomemode.com/api/destroy_stock", { user_id: 9 })
+          $.post( "https://okomemode.com/api/destroy_stock", { user_id: id })
           .done(function(data){
             var recipes = document.getElementById('stocked_recipes');
             while(recipes.lastChild){

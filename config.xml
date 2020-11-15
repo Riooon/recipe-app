@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="com.okomemode" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="com.okomemode" version="2.0.1">
   <name>OKOME MODE</name>
   <description>Made with Monaca (http://monaca.mobi)</description>
   <author/>
@@ -81,6 +81,7 @@
     <splash src="/res/android/screen/splash-port-xhdpi.png" density="port-xhdpi"/>
     <splash src="/res/android/screen/splash-port-xxhdpi.png" density="port-xxhdpi"/>
     <splash src="/res/android/screen/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
+    <preference name="android-targetSdkVersion" value="29" />
   </platform>
   <platform name="electron">
     <icon src="/res/electron/icon/icon_electron_512.png" width="512" height="512"/>

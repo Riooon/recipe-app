@@ -81,3 +81,7 @@ var id_val = sessionStorage.getItem("id");
 function ChangeUserInfo() {
   window.open("https://okomemode.com/useredit/"+id_val, '_system', 'location=yes');
 }
+
+function Register(){
+  window.open("https://okomemode.com/register", '_system', 'location=yes');
+}
